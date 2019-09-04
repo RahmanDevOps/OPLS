@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C27FB49-65CC-439E-B26D-06D14B6E2139}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OPLS</RootNamespace>
+    <AssemblyName>OPLS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Admin\Admin.aspx" />
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\DealerControl.aspx" />
+    <Content Include="Admin\delete.aspx" />
+    <Content Include="Admin\deletetrader.aspx" />
+    <Content Include="Admin\PeopleControl.aspx" />
+    <Content Include="Admin\TraderControl.aspx" />
+    <Content Include="Admin\veirfy.aspx" />
+    <Content Include="Admin\verify.aspx" />
+    <Content Include="Admin\verifyDealers.aspx" />
+    <Content Include="Admin\VerifyTraders.aspx" />
+    <Content Include="Admin\viewdeletetraders.aspx" />
+    <Content Include="Admin\viewDeleteYarnDealers.aspx" />
+    <Content Include="AfterOrder.aspx" />
+    <Content Include="AfterPlace.aspx" />
+    <Content Include="App_Data\oplsdbms.mdf" />
+    <Content Include="App_Data\oplsdbms_log.ldf">
+      <DependentUpon>oplsdbms.mdf</DependentUpon>
+    </Content>
+    <Content Include="contact.aspx" />
+    <Content Include="DealerafterLogin.aspx" />
+    <Content Include="DealerHome.aspx" />
+    <Content Include="DealerLogin.aspx" />
+    <Content Include="DealerRegister.aspx" />
+    <Content Include="Dealers\Accept.aspx" />
+    <Content Include="Dealers\DealerNoticePost.aspx" />
+    <Content Include="Dealers\Dealers.aspx" />
+    <Content Include="Dealers\DealerViewItem.aspx" />
+    <Content Include="Dealers\PostItems.aspx" />
+    <Content Include="Dealers\Profile.aspx" />
+    <Content Include="Dealers\Reject.aspx" />
+    <Content Include="Dealers\UpdateProfile.aspx" />
+    <Content Include="Dealers\ViewNews.aspx" />
+    <Content Include="Dealers\viewposteditems.aspx" />
+    <Content Include="feedback.aspx" />
+    <Content Include="FillForm.aspx" />
+    <Content Include="FillForm2.aspx" />
+    <Content Include="FillForma.aspx" />
+    <Content Include="FillFormb.aspx" />
+    <Content Include="FillFormC.aspx" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\12.png" />
+    <Content Include="Images\1533501005230.jpg" />
+    <Content Include="Images\black-male-user-symbol_318-60703.jpg" />
+    <Content Include="Images\Cover.png" />
+    <Content Include="Images\lock-512.png" />
+    <Content Include="Images\ssh_keys.png" />
+    <Content Include="Images\user log png.png" />
+    <Content Include="News.aspx" />
+    <Content Include="Parts\Parts.aspx" />
+    <Content Include="payment.aspx" />
+    <Content Include="paytm.aspx" />
+    <Content Include="Peoplelogin.aspx" />
+    <Content Include="PeopleProfile.aspx" />
+    <Content Include="PeoplesRegister.aspx" />
+    <Content Include="Peoples\cancel.aspx" />
+    <Content Include="Peoples\Connect.aspx" />
+    <Content Include="Peoples\FindPeoples.aspx" />
+    <Content Include="Peoples\peoplehome.aspx" />
+    <Content Include="Peoples\Peoples.aspx" />
+    <Content Include="Peoples\Placeditems.aspx" />
+    <Content Include="Peoples\PostItem.aspx" />
+    <Content Include="Peoples\TraderSYN.aspx" />
+    <Content Include="Peoples\ViewCancelItems.aspx" />
+    <Content Include="Peoples\ViewPostedItem.aspx" />
+    <Content Include="Peoples\viewtradersyn.aspx" />
+    <Content Include="PowerLoom\PowerLooms.aspx" />
+    <Content Include="Slider\13.jpg" />
+    <Content Include="Slider\20.jpg" />
+    <Content Include="Slider\4.jpg" />
+    <Content Include="Slider\5.jpg" />
+    <Content Include="Slider\6.jpg" />
+    <Content Include="Slider\7.jpg" />
+    <Content Include="Slider\8.jpg" />
+    <Content Include="Slider\cover ayub.jpg" />
+    <Content Include="Slider\Dyed-yarn.jpg" />
+    <Content Include="Slider\HANDLOOM-COTTON-DURRIES-RUGS.jpg" />
+    <Content Include="Slider\hashtag-floor-hall-dari-cotton-with-multicolour-9-ft-x-12ft-500x500.jpg" />
+    <Content Include="Styles\js-image-slider.css" />
+    <Content Include="Styles\js-image-slider.js" />
+    <Content Include="Styles\off.png" />
+    <Content Include="Styles\on.gif" />
+    <Content Include="Styles\on.png" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="TermConditions.aspx" />
+    <Content Include="Traderlogin.aspx" />
+    <Content Include="TraderRegister.aspx" />
+    <Content Include="Traders\PostedNews.aspx" />
+    <Content Include="Traders\Traderhome.aspx" />
+    <Content Include="Traders\TraderPostItem.aspx" />
+    <Content Include="Traders\TraderPostNews.aspx" />
+    <Content Include="Traders\TraderProfile.aspx" />
+    <Content Include="Traders\Traders.aspx" />
+    <Content Include="Traders\UpdateProfile.aspx" />
+    <Content Include="Traders\ViewClothes.aspx" />
+    <Content Include="Traders\ViewPostedItems.aspx" />
+    <Content Include="upload\1.jpeg" />
+    <Content Include="upload\1.jpg" />
+    <Content Include="upload\102ad64bb745b3a5ba9c64b19688681e--mini-cones-weaving-yarn.jpg" />
+    <Content Include="upload\12.jpeg" />
+    <Content Include="upload\12341557_798474343594477_3082234946500327223_n.jpg" />
+    <Content Include="upload\15.jpg" />
+    <Content Include="upload\19.jpg" />
+    <Content Include="upload\2.jpg" />
+    <Content Include="upload\20 kb.jpg" />
+    <Content Include="upload\20171112_161237.jpg" />
+    <Content Include="upload\4984755_orig.jpg" />
+    <Content Include="upload\635672260223397452new_exam_php_screen.jpg" />
+    <Content Include="upload\680ebe5c-d5a5-45c1-95ee-9c7e6f24bef3.jpg" />
+    <Content Include="upload\add new job.jpg" />
+    <Content Include="upload\adhar.jpg" />
+    <Content Include="upload\admin.png" />
+    <Content Include="upload\AMERICAN.png" />
+    <Content Include="upload\ayub.jpg" />
+    <Content Include="upload\Bluegrass_Mills_62_Cotton_1_lb_Cones_2.jpg" />
+    <Content Include="upload\books1.png" />
+    <Content Include="upload\c-v-raman.jpg" />
+    <Content Include="upload\Carpet-Yarn.jpg" />
+    <Content Include="upload\company2.jpg" />
+    <Content Include="upload\comparision-between-hand-loom-power-mordarn-loom-6-638.jpg" />
+    <Content Include="upload\compregistration.jpg" />
+    <Content Include="upload\cotton-lungi-500x500.jpg" />
+    <Content Include="upload\cotton-polyester-lungi-1371101.jpg" />
+    <Content Include="upload\cover ayub.jpg" />
+    <Content Include="upload\cps.png" />
+    <Content Include="upload\dhaaga.jpg" />
+    <Content Include="upload\download.jpg" />
+    <Content Include="upload\er.jpg" />
+    <Content Include="upload\fancy-terrycot-lungi-500x500.jpg" />
+    <Content Include="upload\flying-shuttle.jpg" />
+    <Content Include="upload\HANDLOOM-COTTON-DURRIES-RUGS.jpg" />
+    <Content Include="upload\hashtag-floor-hall-dari-cotton-with-multicolour-9-ft-x-12ft-500x500.jpg" />
+    <Content Include="upload\images %281%29.jpg" />
+    <Content Include="upload\IMG_0006.JPG" />
+    <Content Include="upload\IMG_20170130_225118.jpg" />
+    <Content Include="upload\lungi.jpg" />
+    <Content Include="upload\Moroccan_Berber_Tribal_orange_color_Rug_63X39_inch_1-white-background.jpg" />
+    <Content Include="upload\New Doc 2017-08-20 %281%29_4.jpg" />
+    <Content Include="upload\New Doc 2017-11-13 %282%29.jpg" />
+    <Content Include="upload\polyester-lungi-500x500.jpg" />
+    <Content Include="upload\polyester.jpg" />
+    <Content Include="upload\UT8sIzMXr0XXXagOFbXB.jpg" />
+    <Content Include="upload\WhatsApp Image 2016-10-21 at 1.33.44 PM.jpeg" />
+    <Content Include="upload\yarn dhaga.jpg" />
+    <Content Include="UserLogin.aspx" />
+    <Content Include="UserRegister.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DealerControl.aspx.cs">
+      <DependentUpon>DealerControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DealerControl.aspx.designer.cs">
+      <DependentUpon>DealerControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\deletetrader.aspx.cs">
+      <DependentUpon>deletetrader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\deletetrader.aspx.designer.cs">
+      <DependentUpon>deletetrader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PeopleControl.aspx.cs">
+      <DependentUpon>PeopleControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PeopleControl.aspx.designer.cs">
+      <DependentUpon>PeopleControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TraderControl.aspx.cs">
+      <DependentUpon>TraderControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TraderControl.aspx.designer.cs">
+      <DependentUpon>TraderControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\veirfy.aspx.cs">
+      <DependentUpon>veirfy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\veirfy.aspx.designer.cs">
+      <DependentUpon>veirfy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\verify.aspx.cs">
+      <DependentUpon>verify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\verify.aspx.designer.cs">
+      <DependentUpon>verify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\verifyDealers.aspx.cs">
+      <DependentUpon>verifyDealers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\verifyDealers.aspx.designer.cs">
+      <DependentUpon>verifyDealers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\VerifyTraders.aspx.cs">
+      <DependentUpon>VerifyTraders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\VerifyTraders.aspx.designer.cs">
+      <DependentUpon>VerifyTraders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\viewdeletetraders.aspx.cs">
+      <DependentUpon>viewdeletetraders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\viewdeletetraders.aspx.designer.cs">
+      <DependentUpon>viewdeletetraders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\viewDeleteYarnDealers.aspx.cs">
+      <DependentUpon>viewDeleteYarnDealers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\viewDeleteYarnDealers.aspx.designer.cs">
+      <DependentUpon>viewDeleteYarnDealers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AfterOrder.aspx.cs">
+      <DependentUpon>AfterOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfterOrder.aspx.designer.cs">
+      <DependentUpon>AfterOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AfterPlace.aspx.cs">
+      <DependentUpon>AfterPlace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfterPlace.aspx.designer.cs">
+      <DependentUpon>AfterPlace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer.Master.cs">
+      <DependentUpon>Dealer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealer.Master.designer.cs">
+      <DependentUpon>Dealer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DealerafterLogin.aspx.cs">
+      <DependentUpon>DealerafterLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealerafterLogin.aspx.designer.cs">
+      <DependentUpon>DealerafterLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DealerHome.aspx.cs">
+      <DependentUpon>DealerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealerHome.aspx.designer.cs">
+      <DependentUpon>DealerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DealerLogin.aspx.cs">
+      <DependentUpon>DealerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealerLogin.aspx.designer.cs">
+      <DependentUpon>DealerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DealerRegister.aspx.cs">
+      <DependentUpon>DealerRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealerRegister.aspx.designer.cs">
+      <DependentUpon>DealerRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\Accept.aspx.cs">
+      <DependentUpon>Accept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\Accept.aspx.designer.cs">
+      <DependentUpon>Accept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\DealerNoticePost.aspx.cs">
+      <DependentUpon>DealerNoticePost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\DealerNoticePost.aspx.designer.cs">
+      <DependentUpon>DealerNoticePost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\Dealers.aspx.cs">
+      <DependentUpon>Dealers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\Dealers.aspx.designer.cs">
+      <DependentUpon>Dealers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\DealerViewItem.aspx.cs">
+      <DependentUpon>DealerViewItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\DealerViewItem.aspx.designer.cs">
+      <DependentUpon>DealerViewItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\PostItems.aspx.cs">
+      <DependentUpon>PostItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\PostItems.aspx.designer.cs">
+      <DependentUpon>PostItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\Reject.aspx.cs">
+      <DependentUpon>Reject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\Reject.aspx.designer.cs">
+      <DependentUpon>Reject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\UpdateProfile.aspx.cs">
+      <DependentUpon>UpdateProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\UpdateProfile.aspx.designer.cs">
+      <DependentUpon>UpdateProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\ViewNews.aspx.cs">
+      <DependentUpon>ViewNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\ViewNews.aspx.designer.cs">
+      <DependentUpon>ViewNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealers\viewposteditems.aspx.cs">
+      <DependentUpon>viewposteditems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealers\viewposteditems.aspx.designer.cs">
+      <DependentUpon>viewposteditems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FillForm.aspx.cs">
+      <DependentUpon>FillForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FillForm.aspx.designer.cs">
+      <DependentUpon>FillForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FillForm2.aspx.cs">
+      <DependentUpon>FillForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FillForm2.aspx.designer.cs">
+      <DependentUpon>FillForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FillForma.aspx.cs">
+      <DependentUpon>FillForma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FillForma.aspx.designer.cs">
+      <DependentUpon>FillForma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FillFormb.aspx.cs">
+      <DependentUpon>FillFormb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FillFormb.aspx.designer.cs">
+      <DependentUpon>FillFormb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FillFormC.aspx.cs">
+      <DependentUpon>FillFormC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FillFormC.aspx.designer.cs">
+      <DependentUpon>FillFormC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parts\Parts.aspx.cs">
+      <DependentUpon>Parts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parts\Parts.aspx.designer.cs">
+      <DependentUpon>Parts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paytm.aspx.cs">
+      <DependentUpon>paytm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paytm.aspx.designer.cs">
+      <DependentUpon>paytm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="people.Master.cs">
+      <DependentUpon>people.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="people.Master.designer.cs">
+      <DependentUpon>people.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Peoplelogin.aspx.cs">
+      <DependentUpon>Peoplelogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoplelogin.aspx.designer.cs">
+      <DependentUpon>Peoplelogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PeopleProfile.aspx.cs">
+      <DependentUpon>PeopleProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PeopleProfile.aspx.designer.cs">
+      <DependentUpon>PeopleProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PeoplesRegister.aspx.cs">
+      <DependentUpon>PeoplesRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PeoplesRegister.aspx.designer.cs">
+      <DependentUpon>PeoplesRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\cancel.aspx.cs">
+      <DependentUpon>cancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\cancel.aspx.designer.cs">
+      <DependentUpon>cancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\Connect.aspx.cs">
+      <DependentUpon>Connect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\Connect.aspx.designer.cs">
+      <DependentUpon>Connect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\FindPeoples.aspx.cs">
+      <DependentUpon>FindPeoples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\FindPeoples.aspx.designer.cs">
+      <DependentUpon>FindPeoples.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\peoplehome.aspx.cs">
+      <DependentUpon>peoplehome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\peoplehome.aspx.designer.cs">
+      <DependentUpon>peoplehome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\Peoples.aspx.cs">
+      <DependentUpon>Peoples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\Peoples.aspx.designer.cs">
+      <DependentUpon>Peoples.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\Placeditems.aspx.cs">
+      <DependentUpon>Placeditems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\Placeditems.aspx.designer.cs">
+      <DependentUpon>Placeditems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\PostItem.aspx.cs">
+      <DependentUpon>PostItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\PostItem.aspx.designer.cs">
+      <DependentUpon>PostItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\TraderSYN.aspx.cs">
+      <DependentUpon>TraderSYN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\TraderSYN.aspx.designer.cs">
+      <DependentUpon>TraderSYN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\ViewCancelItems.aspx.cs">
+      <DependentUpon>ViewCancelItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\ViewCancelItems.aspx.designer.cs">
+      <DependentUpon>ViewCancelItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\ViewPostedItem.aspx.cs">
+      <DependentUpon>ViewPostedItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\ViewPostedItem.aspx.designer.cs">
+      <DependentUpon>ViewPostedItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peoples\viewtradersyn.aspx.cs">
+      <DependentUpon>viewtradersyn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peoples\viewtradersyn.aspx.designer.cs">
+      <DependentUpon>viewtradersyn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerLoom\PowerLooms.aspx.cs">
+      <DependentUpon>PowerLooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerLoom\PowerLooms.aspx.designer.cs">
+      <DependentUpon>PowerLooms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TermConditions.aspx.cs">
+      <DependentUpon>TermConditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermConditions.aspx.designer.cs">
+      <DependentUpon>TermConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traderlogin.aspx.cs">
+      <DependentUpon>Traderlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traderlogin.aspx.designer.cs">
+      <DependentUpon>Traderlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TraderMaster.Master.cs">
+      <DependentUpon>TraderMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TraderMaster.Master.designer.cs">
+      <DependentUpon>TraderMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TraderRegister.aspx.cs">
+      <DependentUpon>TraderRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TraderRegister.aspx.designer.cs">
+      <DependentUpon>TraderRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\PostedNews.aspx.cs">
+      <DependentUpon>PostedNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\PostedNews.aspx.designer.cs">
+      <DependentUpon>PostedNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\Traderhome.aspx.cs">
+      <DependentUpon>Traderhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\Traderhome.aspx.designer.cs">
+      <DependentUpon>Traderhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\TraderPostItem.aspx.cs">
+      <DependentUpon>TraderPostItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\TraderPostItem.aspx.designer.cs">
+      <DependentUpon>TraderPostItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\TraderPostNews.aspx.cs">
+      <DependentUpon>TraderPostNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\TraderPostNews.aspx.designer.cs">
+      <DependentUpon>TraderPostNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\TraderProfile.aspx.cs">
+      <DependentUpon>TraderProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\TraderProfile.aspx.designer.cs">
+      <DependentUpon>TraderProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\Traders.aspx.cs">
+      <DependentUpon>Traders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\Traders.aspx.designer.cs">
+      <DependentUpon>Traders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\UpdateProfile.aspx.cs">
+      <DependentUpon>UpdateProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\UpdateProfile.aspx.designer.cs">
+      <DependentUpon>UpdateProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\ViewClothes.aspx.cs">
+      <DependentUpon>ViewClothes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\ViewClothes.aspx.designer.cs">
+      <DependentUpon>ViewClothes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traders\ViewPostedItems.aspx.cs">
+      <DependentUpon>ViewPostedItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Traders\ViewPostedItems.aspx.designer.cs">
+      <DependentUpon>ViewPostedItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegister.aspx.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegister.aspx.designer.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Styles\slider\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dealer.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="people.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TraderMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="upload\ayubfront.pdf" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12472</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
